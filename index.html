@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Page | 知识防护计划</title>
+    <style>
+        body {
+            background: #f0f3ff;
+            font-family: 'Segoe UI', system-ui;
+            min-height: 94vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #2d3436;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: "✨";
+            position: absolute;
+            right: -40px;
+            animation: sparkle 2s infinite;
+        }
+
+        .cta-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #6c5ce7, #a363d9);
+            color: white !important;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(108,92,231,0.3);
+            border: 2px solid white;
+        }
+
+        .cta-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(108,92,231,0.4);
+        }
+
+        .helmet-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .helmet-emoji:hover {
+            transform: rotate(15deg);
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .cta-link {
+                font-size: 1rem;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="helmet-emoji">⛑️</div>
+        <h1>脑袋安全防护计划</h1>
+        <p style="color: #636e72; line-height: 1.6; margin-bottom: 1.5rem;">
+            如果你喜欢我的网站<br>
+并且<br>
+想保护你的脑袋避免被知识的力量击中，<br>
+请点击此处
+        </p>
+        <a href="https://shop111023544.taobao.com/" target="_blank" class="cta-link">
+            🛡️ 立即激活脑袋防护盾
+        </a>
+<!-- 新增建议反馈段落 -->
+        <p style="margin-top: 2rem; color: #6c757d; font-size: 0.9em;">
+            如果你有对网站的建议，欢迎来
+            <a href="mailto:202300820049@mail.sdu.edu.cn"  target="_blank" 
+               style="color: #2d3436; text-decoration: underline;">
+                邮件反馈
+            </a>
+        </p>
+    </div>
+</body>
